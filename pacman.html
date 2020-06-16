@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugar Pac-Man</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body id="game">
+    <input type="image" src="imgs/pause.png" class="pause-icon" alt="pause the game" />
+    <canvas id="canvas" width="400" height="400"></canvas>
+    <script src="libs/functional-light.js"></script>
+    <script src="libs/buzz.js"></script>
+    <script src="libs/processing.js"></script>
+    <script src="script.js"></script>
+    <input type="image" src="imgs/silence.png" class="mute-icon" alt="mute" onclick="muteSound();" />
+    <input type="image" src="imgs/play-sound.png" class="replay-icon" alt="activate sound" onclick="replaySound()" />
+  </body>
+</html>

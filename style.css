@@ -1,0 +1,135 @@
+body#home {
+  background-color: black;
+}
+
+body#game {
+  background-color: black;
+}
+
+body#instructions {
+  background-color: black;
+  color: white;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+body#credits {
+  background-color: black;
+  color: white;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.main-logo {
+  margin-left: 545px;
+  margin-top: 100px;
+}
+
+.second-logo {
+  margin-left: 680px;
+  margin-top: -200px;
+}
+
+.first-element-menu {
+  margin-left: 630px;
+  margin-top: 20px;
+}
+
+.second-element-menu {
+  margin-left: 635px;
+  margin-top: 30px;
+}
+
+.third-element-menu {
+  margin-left: 628px;
+  margin-top: 40px;
+}
+
+.button-play {
+  background-color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 4px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 30px;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.instructions {
+  background-color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 4px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 30px;
+  width: 200px;
+}
+
+.credits {
+  background-color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 4px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 30px;
+  width: 200px;
+}
+
+.mute-icon {
+  size: 200px;
+}
+
+.mute-icon:hover {
+  background-color: bisque;
+}
+
+.replay-icon {
+  size: 200px;
+}
+
+.replay-icon:hover {
+  background-color: bisque;
+}
+
+.controles-texto {
+  margin-top: 80px;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: justify;
+  font-size: 30px;
+  overflow: hidden;
+}
+
+.control-img {
+  margin-left: 570px;
+  width: 380px;
+  height: 380px;
+}
+
+.regresar-uno {
+  font-size: 30px;
+  margin-right: 20px;
+  color: white;
+}
+
+.regresar-dos {
+  font-size: 30px;
+  margin-left: 200px;
+  color: white;
+}
+
+.credits-text {
+  margin-top: 80px;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: justify;
+  font-size: 30px;
+  overflow: hidden;
+}
+
+#canvas {
+  margin-left: 440px;
+  margin-top: 55px;
+}
