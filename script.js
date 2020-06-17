@@ -4,24 +4,8 @@ var bg = new buzz.sound("sounds/start", {
     formats: [ "mp3" ],
     preload: true,
     autoplay: true,
-    loop: true
+    loop: false
   });
-  /**
-   * Contrato: <muteSound> <> -> <evento>
-   * Proposito: Silenciado el sonido seleccionado cada vez que se invoca la función.
-   * Esta función se invoca cada vez que se hace click en el boton enlazado en HTML.
-   */
-  function muteSound(){
-    return bg.mute ();
-  }
-  /**
-   * Contrato: <replaySound> <> -> <evento>
-   * Proposito: Reactiva el sonido seleccionado cada vez que se invoca la función. 
-   * Esta función se invoca cada vez que se hace click en el boton enlazado en HTML.
-   */
-  function replaySound(){
-    return bg.unmute ();
-  }
   bg.setVolume(10); 
 
 var soundplayone = new buzz.sound("sounds/pacman-sound-one", {
@@ -32,6 +16,25 @@ var soundplayone = new buzz.sound("sounds/pacman-sound-one", {
   long: true,
 })
 soundplayone.setVolume (5);
+  bg.fadeWith(soundplayone, 48000);
+  
+  /**
+   * Contrato: <muteSound> <> -> <evento>
+   * Proposito: Silenciado el sonido seleccionado cada vez que se invoca la función.
+   * Esta función se invoca cada vez que se hace click en el boton enlazado en HTML.
+   */
+  function muteSound(){
+    return soundplayone.mute ();
+  }
+  /**
+   * Contrato: <replaySound> <> -> <evento>
+   * Proposito: Reactiva el sonido seleccionado cada vez que se invoca la función. 
+   * Esta función se invoca cada vez que se hace click en el boton enlazado en HTML.
+   */
+  function replaySound(){
+    return soundplayone.unmute ();
+  }
+
 
 const WIDTH = 441;
 const HEIGH = 567;
